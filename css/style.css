@@ -270,3 +270,42 @@ body::before {
 .mini-carte h3 {
   margin: 0 0 8px 0;
 }
+
+
+.formulaire-bob {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 60%;
+    margin: auto;
+}
+
+.formulaire-bob input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.formulaire-bob button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgba(0, 255, 136, 0.3);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.formulaire-bob button:hover {
+    background: rgba(0, 255, 136, 0.5);
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+}

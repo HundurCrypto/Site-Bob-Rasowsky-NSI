@@ -18,3 +18,8 @@ bouton.addEventListener("click", () => {
     }
 
 });
+
+
+function alerteBob() {
+    alert("Merci maintenant tu fais partie de la team bob !");
+}
