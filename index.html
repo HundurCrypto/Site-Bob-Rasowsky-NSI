@@ -21,117 +21,119 @@
         </ul>
     </nav>
 
-    
-	
-	<main>
+    <main class="page">
 
-    <!-- Titre principal -->
-    <section class="hero">
-        <h1>Bienvenue sur le site de Bob Razowski</h1>
-        <p>Découvrez le monstre le plus drôle de Monsters Inc.</p>
-    </section>
-
-    <!-- Origine du personnage -->
-    <section class="section-contenu">
-        <h2>D'où vient Bob Razowski ?</h2>
-        <p>
-            Bob Razowski est un monstre vert à un seul œil originaire de Monstropolis.
-            Il travaille pour l’entreprise Monsters Inc, où il aide à produire de l’énergie
-            en récoltant les rires des enfants. Malgré sa petite taille, il possède une
-            grande intelligence et un humour exceptionnel.
-        </p>
-    </section>
-
-    <!-- Ses meilleurs amis -->
-    <section class="section-contenu">
-        <h2>Ses meilleurs amis</h2>
-        <p>
-            Le meilleur ami de Bob est Jacques Sullivan, surnommé Sully.
-            Ensemble, ils forment un duo inséparable. Bob entretient aussi
-            une relation très forte avec Boo, une petite fille humaine qu’il
-            protège avec courage.
-        </p>
-    </section>
-
-    <!-- Présentation des autres pages -->
-    <section class="section-contenu">
-        <h2>Explorez le site</h2>
-
-        <ul class="liste-pages">
-            <li><strong>Histoire :</strong> Découvrez le parcours complet de Bob.</li>
-            <li><strong>Compétences :</strong> Ses qualités, son intelligence et son humour.</li>
-            <li><strong>Amis :</strong> Ses relations importantes.</li>
-            <li><strong>Statistiques :</strong> Un tableau détaillé de ses capacités.</li>
-            <li><strong>Galerie :</strong> Les meilleurs moments en images.</li>
-        </ul>
-    </section>
-
-<!-- Section musique -->
-<section class="section-contenu">
-    <h2>Ambiance sonore</h2>
-    <p>Clique pour activer la musique preferé de Bob 😎</p>
-
-    <!-- Lecteur audio caché -->
-    <audio id="musiqueFond" src="audio/musique.mp3"></audio>
-
-    <!-- Bouton contrôle -->
-    <button id="btnMusique" class="btn-musique">▶ Lancer la musique</button>
-</section>
-
-<!-- Lien vers le fichier JS -->
-<script src="js/script.js"></script>
-
-
-
-</main>
-
-	
-	
-	
-<!-- Section images verticales -->
-<section class="galerie-verticale">
-
-  <div class="bloc-image">
-    <img src="images/img1.jpg" alt="Bob et Sully">
-    <div class="texte-image">
-      
-    </div>
-  </div>
-
-  <div class="bloc-image">
-    <img src="images/img2.jpg" alt="Bob en action">
-    <div class="texte-image">
-      
-      
-    </div>
-  </div>
-
-  <div class="bloc-image">
-    <img src="images/img3.jpg" alt="Bob concentré">
-    <div class="texte-image">
-     
-    </div>
-  </div>
-
-</section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-        <section class="presentation">
-            <h2>Qui est Bob ?</h2>
+        <!-- Titre principal -->
+        <section class="hero">
+            <h1>Bienvenue sur le site de <span class="accent">Bob Razowski</span></h1>
             <p>
-                Bob Razowski est un monstre vert à un seul œil travaillant chez Monsters Inc.
-                Il est célèbre pour son humour exceptionnel et son intelligence remarquable.
+                Le monstre le plus drôle de <span class="accent">Monsters Inc</span>, venu tout droit de
+                <span class="accent2">Monstropolis</span>.
             </p>
         </section>
+
+        <!-- Origine du personnage -->
+        <section class="section-contenu">
+            <h2>D’où vient Bob Razowski ?</h2>
+            <p>
+                Bob Razowski est un monstre <span class="accent">vert</span> à un seul œil, originaire de
+                <span class="accent2">Monstropolis</span>.
+                Il travaille pour l’entreprise <span class="accent">Monsters Inc</span>, où il aide à produire
+                de l’énergie en récoltant les <span class="accent3">rires</span> des enfants.
+                Malgré sa petite taille, il possède une grande <span class="accent2">intelligence</span>
+                et un <span class="accent">humour</span> exceptionnel.
+            </p>
+        </section>
+
+        <!-- Ses meilleurs amis -->
+        <section class="section-contenu">
+            <h2>Ses meilleurs amis</h2>
+            <p>
+                Le meilleur ami de Bob est <span class="accent">Jacques Sullivan</span>, surnommé
+                <span class="accent2">Sully</span>. Ensemble, ils forment un duo inséparable.
+                Bob entretient aussi une relation très forte avec <span class="accent3">Boo</span>,
+                une petite fille humaine qu’il protège avec courage.
+            </p>
+        </section>
+
+        <!-- Présentation des autres pages : plus dynamique avec des cartes -->
+        <section class="section-contenu">
+            <h2>Explorez le site</h2>
+            <p class="sous-texte">
+                Clique sur une carte pour visiter rapidement une page.
+            </p>
+
+            <div class="mini-cartes">
+                <a class="mini-carte" href="histoire.html">
+                    <h3>📖 Histoire</h3>
+                    <p>Le parcours complet de Bob.</p>
+                </a>
+
+                <a class="mini-carte" href="competences.html">
+                    <h3>💡 Compétences</h3>
+                    <p>Ses forces et ses points faibles.</p>
+                </a>
+
+                <a class="mini-carte" href="amis.html">
+                    <h3>🧑‍🤝‍🧑 Amis</h3>
+                    <p>Ses relations importantes.</p>
+                </a>
+
+                <a class="mini-carte" href="statistiques.html">
+                    <h3>📊 Statistiques</h3>
+                    <p>Le tableau de ses capacités.</p>
+                </a>
+
+                <a class="mini-carte" href="galerie.html">
+                    <h3>🖼 Galerie</h3>
+                    <p>Les meilleurs moments en images.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Musique -->
+        <section class="section-contenu">
+            <h2>Ambiance sonore</h2>
+            <p>
+                Clique pour activer la musique préférée de Bob 😎
+            </p>
+
+            <audio id="musiqueFond" src="audio/musique.mp3"></audio>
+            <button id="btnMusique" class="btn-musique">▶ Lancer la musique</button>
+        </section>
+
+        <!-- Images verticales (dans le main cette fois) -->
+        <section class="galerie-verticale">
+
+            <div class="bloc-image">
+                <img src="images/img1.jpg" alt="Bob et Sully">
+                <div class="texte-image">
+                    <h2>Duo légendaire</h2>
+                    <p>Bob & Sully, ensemble pour tout gérer.</p>
+                </div>
+            </div>
+
+            <div class="bloc-image">
+                <img src="images/img2.jpg" alt="Bob en action">
+                <div class="texte-image">
+                    <h2>Mode action</h2>
+                    <p>Quand Bob doit improviser… il assure.</p>
+                </div>
+            </div>
+
+            <div class="bloc-image">
+                <img src="images/img3.jpg" alt="Bob concentré">
+                <div class="texte-image">
+                    <h2>Focus</h2>
+                    <p>Quand il réfléchit, ça part en stratégie.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Script JS -->
+        <script src="js/script.js"></script>
+
     </main>
 
 </body>

@@ -230,3 +230,43 @@ body::before {
     background: rgba(0, 255, 136, 0.4);
     box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
 }
+
+/* Mots en couleur dans le texte */
+.accent { color: #00ff88; font-weight: bold; }
+.accent2 { color: #7ad7ff; font-weight: bold; }
+.accent3 { color: #ffd66b; font-weight: bold; }
+
+.sous-texte {
+  opacity: 0.85;
+  margin-top: -10px;
+}
+
+/* Mini-cartes cliquables */
+.mini-cartes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.mini-carte {
+  display: block;
+  width: 240px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 16px;
+  transition: 0.25s;
+}
+
+.mini-carte:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 14px rgba(0, 255, 136, 0.35);
+  background: rgba(255,255,255,0.12);
+}
+
+.mini-carte h3 {
+  margin: 0 0 8px 0;
+}
