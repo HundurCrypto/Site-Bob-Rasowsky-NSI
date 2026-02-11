@@ -1,0 +1,232 @@
+/* Style général de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../images/fond.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(8px); /* Effet verre */
+    background: rgba(0, 0, 0, 0.4); /* Transparence */
+    padding: 15px 0;
+}
+
+/* Menu horizontal */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Liens du menu */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Effet lumineux au survol */
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px white;
+}
+
+/* Section principale */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* Présentation */
+.presentation {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+    padding: 30px;
+    width: 70%;
+    border-radius: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../images/fond.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/* Overlay sombre + flou */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1, .hero p, main {
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* Galerie verticale */
+.galerie-verticale {
+  margin-top: 80px;
+}
+
+/* Bloc image pleine largeur */
+.bloc-image {
+  position: relative;
+  width: 60%;        /* moins large */
+  height: 350px;
+  margin: 40px auto; /* centre horizontalement */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 900px) {
+  .bloc-image {
+    width: 90%;
+    height: 250px;
+  }
+}
+
+/* Image */
+.bloc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); /* assombrit pour lire le texte */
+  transition: transform 0.5s ease;
+}
+
+/* Zoom au survol */
+.bloc-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Texte par-dessus */
+.texte-image {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  color: white;
+}
+
+.texte-image h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.texte-image p {
+  font-size: 1.2rem;
+}
+
+/* Sections de contenu */
+.section-contenu {
+    background: rgba(0, 0, 0, 0.55);
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Liste présentation pages */
+.liste-pages {
+    list-style: none;
+    padding: 0;
+}
+
+.liste-pages li {
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+/* Petit effet au survol */
+.liste-pages li:hover {
+    color: #00ff88;
+    transform: scale(1.03);
+}
+
+/* Mise en page des pages (évite que le menu cache le contenu) */
+.page {
+    padding-top: 120px; /* important : navbar fixed */
+}
+
+/* Hero plus petit que l'accueil */
+.hero-petite {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.hero-petite h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Cartes compétences */
+.cartes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carte {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.08); /* léger contraste */
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+/* Effet hover (dynamise) */
+.carte:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 14px rgba(0, 255, 136, 0.35);
+}
+
+/* Bouton musique */
+.btn-musique {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 255, 136, 0.25);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-musique:hover {
+    background: rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+}
